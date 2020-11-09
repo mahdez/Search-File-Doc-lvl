@@ -1,0 +1,10 @@
+D:\Dee\SearchFileDocument\SearchFileDocument\bin\Debug\SearchFileDocument.exe.config
+D:\Dee\SearchFileDocument\SearchFileDocument\bin\Debug\SearchFileDocument.exe
+D:\Dee\SearchFileDocument\SearchFileDocument\bin\Debug\SearchFileDocument.pdb
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.csprojAssemblyReference.cache
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.Form1.resources
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.Properties.Resources.resources
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.csproj.GenerateResource.cache
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.csproj.CoreCompileInputs.cache
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.exe
+D:\Dee\SearchFileDocument\SearchFileDocument\obj\Debug\SearchFileDocument.pdb
