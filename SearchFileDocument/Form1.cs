@@ -40,6 +40,7 @@ namespace SearchFileDocument
             ClearData();
             var dir = textBox1.Text;
             PrintDirectoryTree(dir, 99, null);
+            lblTotal.Text = "Total " + (i - 1);
         }
 
         private void ClearData()
@@ -52,10 +53,10 @@ namespace SearchFileDocument
             dataGridView1.Refresh();
         }
 
-        public void PrintDirectoryTree(string directory, int lvl, string[] excludedFolders, string lvlSeperator = "" )
+        public void PrintDirectoryTree(string directory, int lvl, string[] excludedFolders )
         {
             excludedFolders = excludedFolders ?? new string[0];
-            if (directory != null && directory != "")
+            if (directory != null && directory != "" && directory != "Searching...")
             {
                 foreach (string f in Directory.GetFiles(directory))
                 {
@@ -67,8 +68,9 @@ namespace SearchFileDocument
 
                     if (lvl > 0 && Array.IndexOf(excludedFolders, Path.GetFileName(d)) < 0)
                     {
-                        PrintDirectoryTree(d, lvl - 1, excludedFolders, lvlSeperator + "  ");
+                        PrintDirectoryTree(d, lvl - 1, excludedFolders);
                     }
+                    
                 }
             }
             else
