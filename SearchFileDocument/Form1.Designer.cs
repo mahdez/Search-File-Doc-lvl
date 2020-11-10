@@ -30,7 +30,7 @@
         {
             this.btnBrowse = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnExport = new System.Windows.Forms.Button();
+            this.btnShow = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +38,8 @@
             this.strPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.folderBrowserDialogExport = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,15 +61,19 @@
             this.textBox1.Size = new System.Drawing.Size(381, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // btnExport
+            // btnShow
             // 
-            this.btnExport.Location = new System.Drawing.Point(503, 32);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 23);
-            this.btnExport.TabIndex = 2;
-            this.btnExport.Text = "Export";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            this.btnShow.Location = new System.Drawing.Point(503, 32);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(75, 23);
+            this.btnShow.TabIndex = 2;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.ShowNewFolderButton = false;
             // 
             // dataGridView1
             // 
@@ -123,15 +129,26 @@
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 6;
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(584, 33);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 7;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 551);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnShow);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnBrowse);
             this.Name = "Form1";
@@ -146,7 +163,7 @@
 
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Index;
@@ -154,6 +171,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn strPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialogExport;
     }
 }
 
